@@ -23,7 +23,7 @@ for i in range(rows):
     for j in range(cols):
         img_mat_ext[i][j] = img_mat[i][j]
 
-# 傅里叶变换
+# 快速傅里叶变换得到频率分布
 img_mat_fu = np.fft.fft2(img_mat_ext)
 # 将低频信号移植中间, 等效于在时域上对 f(x, y) 乘以 (-1)^(m + n)
 img_mat_fu = np.fft.fftshift(img_mat_fu)
