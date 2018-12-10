@@ -2,7 +2,7 @@ import numpy as np
 import PIL.Image
 import scipy.misc
 """
- ;Author chenhao
+    ;Author chenhao
     ;Date 2018/12/10
     ;Detail 双线性插值
         取原图像中距离目标像素点最近的 4 个点, 并对这 4 个点与其对应权值的乘积求和, 获得最终像素值.
